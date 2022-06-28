@@ -404,7 +404,7 @@
                         console.log('acc:' + connectData.access_token);
                         // アクセストークン
                         let accToken = 'Bearer ' + connectData.access_token;
-                                                // コンタクトボード明細を取得
+                        // コンタクトボード明細を取得
                         $.ajax({
                             type: 'GET',
                             crossOrigin: true,
@@ -418,10 +418,18 @@
                                 console.log('res1:' + res);
                             },
                             error : function (data, errorThrown,status) {
+                                console.log('失敗2');
+                                console.log('data');
+                                console.log('errorThrown');
+                                console.log('status');
                             }
                         })
                     },
                     error : function (data, errorThrown,status) {
+                        console.log('失敗1');
+                        console.log('data');
+                        console.log('errorThrown');
+                        console.log('status');
                     }
                 });
             }
