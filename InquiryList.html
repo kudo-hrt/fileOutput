@@ -415,6 +415,7 @@
                             dataType: 'json',
                             data : JSON.stringify(caseNum.value),
                             success : function (res) {
+                                console.log('res:' + res);
                                 // データを取得できた場合
                                 if(res.length != 0){
                                     arrayCbd = res; // [{Id, RecordType__c, Content__c, Case__c, CreatedDate}]
