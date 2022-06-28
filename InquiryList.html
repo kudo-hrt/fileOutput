@@ -431,6 +431,7 @@
                                         dataType: 'json',
                                         data : JSON.stringify(caseNum.value),
                                         success : function (Cv) {
+                                            console.log('ここ');
                                             console.log('res2:' + res);
                                             //console.log('Cv:' + Cv);
                                             let cvList = Cv; // [Id LinkEntityId(コンタクトボードID), List CvIdList(コンテンツバージョンID), CvName]
