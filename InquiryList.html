@@ -2,8 +2,8 @@
 <html lang="ja">
 	<head>
 		<meta charset="shift_jis">
-		<title>PayPay‹âs@‚¨–â‚¢‡‚í‚¹ˆê——‰æ–Ê</title>
-		<meta name="description" content="ŒÚ‹qƒRƒ“ƒ^ƒNƒgƒ{[ƒh">
+		<title>PayPayéŠ€è¡Œã€€ãŠå•ã„åˆã‚ã›ä¸€è¦§ç”»é¢</title>
+		<meta name="description" content="é¡§å®¢ã‚³ãƒ³ã‚¿ã‚¯ãƒˆãƒœãƒ¼ãƒ‰">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <style>
@@ -30,7 +30,7 @@
                 overflow-wrap: normal;
             }
             .button {
-                /*˜güAŠO˜gAƒNƒŠƒbƒN‚Ì˜gü‚ğÁ‹*/
+                /*æ ç·šã€å¤–æ ã€ã‚¯ãƒªãƒƒã‚¯æ™‚ã®æ ç·šã‚’æ¶ˆå»*/
                 padding: 1em 0 0;
                 border: none;
                 outline: none;
@@ -99,11 +99,11 @@
 	</head>
 	<body>
         <div id="content">
-            <!-- ‚¨–â‚¢‡‚í‚¹ˆê—— -->
+            <!-- ãŠå•ã„åˆã‚ã›ä¸€è¦§ -->
             <div id="inqList">
-                <b><p>‚¨–â‚¢‡‚í‚¹ˆê——</p></b>
+                <b><p>ãŠå•ã„åˆã‚ã›ä¸€è¦§</p></b>
                 
-                <!-- ˆÈ‰ºƒeƒ“ƒvƒŒ[ƒg‚ğ‘‚­ -->
+                <!-- ä»¥ä¸‹ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã‚’æ›¸ã -->
                 <template id="templateInqList">
                     <tr align="left">
                         <th>
@@ -118,31 +118,31 @@
                     </tr>
                     <tr>
                         <td align="right">
-                            <p style="margin: 0;"><button type="button" class="inqButton buttonBrue_small" onclick="sendCbd(this)">•\¦</button></p>
+                            <p style="margin: 0;"><button type="button" class="inqButton buttonBrue_small" onclick="sendCbd(this)">è¡¨ç¤º</button></p>
                         </td>
                     </tr>
                 </template>
                 
-                <!-- ƒeƒ“ƒvƒŒ[ƒgo—Í -->
+                <!-- ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆå‡ºåŠ› -->
                 <div>
                     <table id="outputInqList">
                     </table>
                 </div>
-                <!-- /ƒeƒ“ƒvƒŒ[ƒgo—Í -->
+                <!-- /ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆå‡ºåŠ› -->
 
                 <div class="buttonContainer">
-                    <b><button type="button" onclick="location.href='./index.html'" class="buttonBrue">ƒRƒ“ƒ^ƒNƒgƒ{[ƒh ƒz[ƒ€</button></b>
+                    <b><button type="button" onclick="location.href='./index.html'" class="buttonBrue">ã‚³ãƒ³ã‚¿ã‚¯ãƒˆãƒœãƒ¼ãƒ‰ ãƒ›ãƒ¼ãƒ </button></b>
                 </div>
             </div>
-            <!-- /‚¨–â‚¢‡‚í‚¹ˆê—— -->
+            <!-- /ãŠå•ã„åˆã‚ã›ä¸€è¦§ -->
             
-            <!-- ‚¨–â‚¢‡‚í‚¹Ú× -->
+            <!-- ãŠå•ã„åˆã‚ã›è©³ç´° -->
             <div id="inqDetailsList">
                 <div id="inqDetails1">
 
                     <b><p id='inq1' style='display:none; color: #004db1f7; font-size: 19px;'></p></b>
 
-                    <!-- ƒeƒ“ƒvƒŒ[ƒg -->
+                    <!-- ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆ -->
                     <template id="templateInqList_Details">
                         <tr align="left">
                             <th>
@@ -155,9 +155,9 @@
                             </td>
                         </tr>
                     </template>
-                    <!-- /ƒeƒ“ƒvƒŒ[ƒg -->
+                    <!-- /ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆ -->
 
-                    <!-- ƒtƒ@ƒCƒ‹ƒeƒ“ƒvƒŒ[ƒg -->
+                    <!-- ãƒ•ã‚¡ã‚¤ãƒ«ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆ -->
                     <template id="fileList">
                         <tr>
                             <td>
@@ -166,72 +166,72 @@
                             </td>
                         </tr>
                     </template>
-                    <!-- /ƒtƒ@ƒCƒ‹ƒeƒ“ƒvƒŒ[ƒg -->
+                    <!-- /ãƒ•ã‚¡ã‚¤ãƒ«ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆ -->
 
-                    <!-- ƒeƒ“ƒvƒŒ[ƒgo—Í -->
+                    <!-- ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆå‡ºåŠ› -->
                     <div>
                         <form id="outputInqList_Details_form">
                             <table id="outputInqList_Details">
                             </table>
                         </form>
                     </div>
-                    <!-- /ƒeƒ“ƒvƒŒ[ƒgo—Í -->
+                    <!-- /ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆå‡ºåŠ› -->
 
                     <div class="buttonContainer">
-                        <p><button type="button" onclick="location.href='./NewReply.html'" class="buttonBrue">•ÔM‚·‚é</button></p>
-                        <button type="button" onclick="changeDisplayBuckButton()" class="buttonBrue_noborder">–ß‚é</button>
+                        <p><button type="button" onclick="location.href='./NewReply.html'" class="buttonBrue">è¿”ä¿¡ã™ã‚‹</button></p>
+                        <button type="button" onclick="changeDisplayBuckButton()" class="buttonBrue_noborder">æˆ»ã‚‹</button>
                     </div>
                 </div>
-                <!-- /‚¨–â‚¢‡‚í‚¹Ú× -->
+                <!-- /ãŠå•ã„åˆã‚ã›è©³ç´° -->
             </div>
         </div>
 
         <script>
             /***
-			 ˆê——‚ÆÚ×‰æ–Ê‚ÌØ‚è‘Ö‚¦
+			 ä¸€è¦§ã¨è©³ç´°ç”»é¢ã®åˆ‡ã‚Šæ›¿ãˆ
 			***/
             
-            // •\¦ƒ{ƒ^ƒ“
+            // è¡¨ç¤ºãƒœã‚¿ãƒ³
             function changeDisplayButton1(Num) {
-                // ‚¨–â‚¢‡‚í‚¹ˆê——”ñ•\¦
+                // ãŠå•ã„åˆã‚ã›ä¸€è¦§éè¡¨ç¤º
                 document.getElementById('inqList').style.display = 'none';
-                // ‚¨–â‚¢‡‚í‚¹Ú×‚Ì•\¦
+                // ãŠå•ã„åˆã‚ã›è©³ç´°ã®è¡¨ç¤º
                 document.getElementById('inqDetailsList').style.display = 'inline';
                 document.getElementById('inqDetails1').style.display = 'inline';
                 document.getElementById('inq1').style.display = 'inline';
-                // ƒ^ƒCƒgƒ‹‚ÆƒCƒ“ƒfƒbƒNƒX
+                // ã‚¿ã‚¤ãƒˆãƒ«ã¨ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹
                 let title = '';
                 let index = '';
-                // ƒP[ƒX‚Ì”z—ñ‚©‚çƒP[ƒXNo‚Ì‚İ‚ğ”z—ñ‚Æ‚µ‚Ä€”õ
+                // ã‚±ãƒ¼ã‚¹ã®é…åˆ—ã‹ã‚‰ã‚±ãƒ¼ã‚¹Noã®ã¿ã‚’é…åˆ—ã¨ã—ã¦æº–å‚™
                 let caseNumber = arrayInq.map(el => el.CaseNumber);
-                // ƒP[ƒXNo.‚©‚ç“ú•t‚ğæ“¾
+                // ã‚±ãƒ¼ã‚¹No.ã‹ã‚‰æ—¥ä»˜ã‚’å–å¾—
                 index = caseNumber.indexOf(Num);
                 title = arrayInq[index].CreatedDate;
-                // ƒ^ƒCƒgƒ‹—p‚É‰ÁH
+                // ã‚¿ã‚¤ãƒˆãƒ«ç”¨ã«åŠ å·¥
                 title = 'No.' + title.substring( 0, title.length - 12 ).replace(/T|-|:/g,'');
                 //console.log(title);
-                // ƒ^ƒCƒgƒ‹‚ğİ’è
+                // ã‚¿ã‚¤ãƒˆãƒ«ã‚’è¨­å®š
                 document.getElementById('inq1').innerHTML = title;
             };
             function changeDisplayButton2() {
-                // ‚¨–â‚¢‡‚í‚¹ˆê——”ñ•\¦
+                // ãŠå•ã„åˆã‚ã›ä¸€è¦§éè¡¨ç¤º
                 document.getElementById('inqList').style.display = 'none';
-                // ‚¨–â‚¢‡‚í‚¹Ú×‚Ì•\¦
+                // ãŠå•ã„åˆã‚ã›è©³ç´°ã®è¡¨ç¤º
                 document.getElementById('inqDetailsList').style.display = 'inline';
                 document.getElementById('inqDetails1').style.display = 'inline';
             };
-            // –ß‚éƒ{ƒ^ƒ“
+            // æˆ»ã‚‹ãƒœã‚¿ãƒ³
             function changeDisplayBuckButton() {
-                // ‚¨–â‚¢‡‚í‚¹ˆê——•\¦
+                // ãŠå•ã„åˆã‚ã›ä¸€è¦§è¡¨ç¤º
                 document.getElementById('inqList').style.display = 'inline';
-                // ‚¨–â‚¢‡‚í‚¹Ú×‚Ì”ñ•\¦ 
+                // ãŠå•ã„åˆã‚ã›è©³ç´°ã®éè¡¨ç¤º 
                 document.getElementById('inqDetailsList').style.display = 'none';
                 document.getElementById('inqDetails1').style.display = 'none';
                 //document.getElementById('inqDetails2').style.display = 'none';
-                // ƒ^ƒCƒgƒ‹‚Ì”ñ•\¦
+                // ã‚¿ã‚¤ãƒˆãƒ«ã®éè¡¨ç¤º
                 document.getElementById('inq1').style.display = 'none';
 
-                // ƒe[ƒuƒ‹‚Ìq—v‘f‚·‚×‚Ä‚ğíœ
+                // ãƒ†ãƒ¼ãƒ–ãƒ«ã®å­è¦ç´ ã™ã¹ã¦ã‚’å‰Šé™¤
                 let oldDetailList = document.getElementById('outputInqList_Details');
                 let removeOldDetailList = oldDetailList.querySelectorAll('tr');
                 if(removeOldDetailList.length != 0){
@@ -242,27 +242,27 @@
             };
 
 			/***
-			 —v‘f‚Ì‘S•\¦E•”•ª•\¦ˆ—
+			 è¦ç´ ã®å…¨è¡¨ç¤ºãƒ»éƒ¨åˆ†è¡¨ç¤ºå‡¦ç†
 			***/
             /*
-                ˆø”F‰Ÿ‰ºƒ{ƒ^ƒ“—v‘f
+                å¼•æ•°ï¼šæŠ¼ä¸‹ãƒœã‚¿ãƒ³è¦ç´ 
             */
             function dButton(elem){
-                // ƒ{ƒ^ƒ“‚Ìó‘Ô
-                // openState=‘S•\¦(true)/•”•ª•\¦(false)‚Ìó‘Ô
+                // ãƒœã‚¿ãƒ³ã®çŠ¶æ…‹
+                // openState=å…¨è¡¨ç¤º(true)/éƒ¨åˆ†è¡¨ç¤º(false)ã®çŠ¶æ…‹
                 let openState = elem.value;
-                // ‰Ÿ‚³‚ê‚½ƒ{ƒ^ƒ“No(“ñŒ…‚Ì“®‚©‚È‚¢)
+                // æŠ¼ã•ã‚ŒãŸãƒœã‚¿ãƒ³No(äºŒæ¡ã®æ™‚å‹•ã‹ãªã„)
                 let buttonNum = elem.Name.substr(elem.Name.length-1, elem.Name.length);
-                // Ú×—v‘f‚Ìæ“¾
+                // è©³ç´°è¦ç´ ã®å–å¾—
                 let element = document.getElementById(elem.Name);                
-                // ƒtƒ@ƒCƒ‹—L–³
+                // ãƒ•ã‚¡ã‚¤ãƒ«æœ‰ç„¡
                 let fileElemValue = document.getElementById('fdText'+buttonNum);
                 
-                // ƒ{ƒ^ƒ“‚Ìó‘Ô‚Å•\¦‚ğØ‚è‘Ö‚¦(—v‘f‚Ìvalue‚Í•¶š—ñ)
+                // ãƒœã‚¿ãƒ³ã®çŠ¶æ…‹ã§è¡¨ç¤ºã‚’åˆ‡ã‚Šæ›¿ãˆ(è¦ç´ ã®valueã¯æ–‡å­—åˆ—)
                 if(openState=='true'){
-                    // Ú×‚ğ•”•ª•\¦
+                    // è©³ç´°ã‚’éƒ¨åˆ†è¡¨ç¤º
                     element.innerHTML = arrayCbd[buttonNum].RecordType__c + ':' + arrayCbd[buttonNum].Content__c.substring(0, 12) + "...";
-                    // “à—e‚ª11•¶šˆÈ‰º‚È‚ç‚»‚Ì‚Ü‚ÜA‚»‚ê‚ğ’´‚¦‚éê‡È—ª
+                    // å†…å®¹ãŒ11æ–‡å­—ä»¥ä¸‹ãªã‚‰ãã®ã¾ã¾ã€ãã‚Œã‚’è¶…ãˆã‚‹å ´åˆçœç•¥
                     let text = '';
                     if(arrayCbd[buttonNum].Content__c.length > 12){
                         text = arrayCbd[buttonNum].RecordType__c + ':' + arrayCbd[buttonNum].Content__c.substring(0, 12) + "...";
@@ -270,7 +270,7 @@
                         text = arrayCbd[buttonNum].RecordType__c + ':' + arrayCbd[buttonNum].Content__c;
                     }
                     element.innerHTML = text;
-                    // ƒtƒ@ƒCƒ‹‚ª‚ ‚éê‡AŒÅ’è•¶Œ¾‚Æƒtƒ@ƒCƒ‹ƒŠƒ“ƒN‚ğ”ñ•\¦
+                    // ãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ã‚‹å ´åˆã€å›ºå®šæ–‡è¨€ã¨ãƒ•ã‚¡ã‚¤ãƒ«ãƒªãƒ³ã‚¯ã‚’éè¡¨ç¤º
                     if(fileElemValue.value=='true'){
                         document.getElementById('fdText'+buttonNum).style = 'display:none;';
                         document.getElementById('fName'+buttonNum).style = 'display:none;';
@@ -278,9 +278,9 @@
                     openState = 'false';
                     
                 } else{
-                    // Ú×‚ğ‘S•\¦
+                    // è©³ç´°ã‚’å…¨è¡¨ç¤º
                     element.innerHTML = arrayCbd[buttonNum].RecordType__c + ':' + arrayCbd[buttonNum].Content__c;
-                    // ƒtƒ@ƒCƒ‹‚ª‚ ‚éê‡AŒÅ’è•¶Œ¾‚Æƒtƒ@ƒCƒ‹ƒŠƒ“ƒN‚ğ•\¦
+                    // ãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ã‚‹å ´åˆã€å›ºå®šæ–‡è¨€ã¨ãƒ•ã‚¡ã‚¤ãƒ«ãƒªãƒ³ã‚¯ã‚’è¡¨ç¤º
                     if(fileElemValue.value=='true'){
                         document.getElementById('fdText'+buttonNum).style = 'display:inline;';
                         document.getElementById('fName'+buttonNum).style = 'display:inline;';
@@ -288,18 +288,18 @@
                     openState = 'true';
 
                 }
-                // ƒ{ƒ^ƒ“‚Ìó‘Ô‚ğİ’è
+                // ãƒœã‚¿ãƒ³ã®çŠ¶æ…‹ã‚’è¨­å®š
                 elem.value = openState;
             }
 
 
-            // æ“¾‚µ‚½ƒP[ƒXŠi”[—p
+            // å–å¾—ã—ãŸã‚±ãƒ¼ã‚¹æ ¼ç´ç”¨
             let arrayInq = [];
-            // æ“¾‚µ‚½ƒRƒ“ƒ^ƒNƒgƒ{[ƒh–¾×Ši”[—p
+            // å–å¾—ã—ãŸã‚³ãƒ³ã‚¿ã‚¯ãƒˆãƒœãƒ¼ãƒ‰æ˜ç´°æ ¼ç´ç”¨
             let arrayCbd = [];
-            // ‰Šú•\¦ˆ—
+            // åˆæœŸè¡¨ç¤ºå‡¦ç†
             window.onload = function(){
-                // ƒAƒNƒZƒXƒg[ƒNƒ“æ“¾iƒŠƒtƒŒƒbƒVƒ…ƒg[ƒNƒ“ƒtƒ[j Ajax
+                // ã‚¢ã‚¯ã‚»ã‚¹ãƒˆãƒ¼ã‚¯ãƒ³å–å¾—ï¼ˆãƒªãƒ•ãƒ¬ãƒƒã‚·ãƒ¥ãƒˆãƒ¼ã‚¯ãƒ³ãƒ•ãƒ­ãƒ¼ï¼‰ Ajax
                 $.ajax({
                     type: 'POST',
                     crossOrigin: true,
@@ -317,24 +317,24 @@
                             cache :false,
                             headers: {"Authorization" : accToken},
                             success : function (res) {
-                                // ƒf[ƒ^‚ğæ“¾‚Å‚«‚½ê‡
+                                // ãƒ‡ãƒ¼ã‚¿ã‚’å–å¾—ã§ããŸå ´åˆ
                                 if(res.length != 0){
-                                    // ƒP[ƒX‚ğBK
+                                    // ã‚±ãƒ¼ã‚¹ã‚’BK
                                     arrayInq = res;
                                     //console.log(arrayInq);
                                     
-                                    // template—v‘f‚ğæ“¾
+                                    // templateè¦ç´ ã‚’å–å¾—
                                     let template = document.getElementById('templateInqList');
-                                    // ƒf[ƒ^‚Ì”•ªŒJ‚è•Ô‚µ
+                                    // ãƒ‡ãƒ¼ã‚¿ã®æ•°åˆ†ç¹°ã‚Šè¿”ã—
                                     for(let i = 0; i < res.length; i++){
-                                        // template—v‘f‚Ì“à—e‚ğ•¡»
+                                        // templateè¦ç´ ã®å†…å®¹ã‚’è¤‡è£½
                                         let clone = template.content.cloneNode(true);
-                                        // •¡»‚µ‚½template—v‘f‚Éƒf[ƒ^‚ğ‘}“ü
+                                        // è¤‡è£½ã—ãŸtemplateè¦ç´ ã«ãƒ‡ãƒ¼ã‚¿ã‚’æŒ¿å…¥
                                         clone.querySelector('.inqTitle').textContent = 'No.' + res[i].CreatedDate.substring(0, res[i].CreatedDate.length - 12).replace(/T|-|:/g,'');
-                                        clone.querySelector('.inqType').textContent = '–â‚¢‡‚í‚¹í•ÊF' + res[i].Subject;
-                                        clone.querySelector('.inqstatus').textContent = 'ƒXƒe[ƒ^ƒXF' + res[i].Status;
+                                        clone.querySelector('.inqType').textContent = 'å•ã„åˆã‚ã›ç¨®åˆ¥ï¼š' + res[i].Subject;
+                                        clone.querySelector('.inqstatus').textContent = 'ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ï¼š' + res[i].Status;
                                         clone.querySelector('.inqButton').value = res[i].CaseNumber;
-                                        // div#container‚Ì’†‚É’Ç‰Á
+                                        // div#containerã®ä¸­ã«è¿½åŠ 
                                         document.getElementById('outputInqList').appendChild(clone);
                                     }
                                 }
@@ -349,24 +349,24 @@
                 });
             }
 
-            /*** ˆø”F cbdObjList***/
+            /*** å¼•æ•°ï¼š cbdObjList***/
             function makeTags(list){
                 if(list.length != 0){
-                    // cbdObjList‚ğƒ‹[ƒv
+                    // cbdObjListã‚’ãƒ«ãƒ¼ãƒ—
                     list.forEach(elm => {
                         console.log('elm'+ JSON.stringify(elm));
-                        // ƒIƒuƒWƒFƒNƒg—v‘f‚ğƒ‹[ƒv
+                        // ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆè¦ç´ ã‚’ãƒ«ãƒ¼ãƒ—
                         Object.keys(elm).forEach(key => {
                             console.log(`key: ${key} value: ${JSON.stringify(elm[key])}`)
                             let childElm = elm[key];
-                            // —v‘f‚Ìƒf[ƒ^Œ^‚É‚æ‚Á‚Äƒ‹[ƒv•û–@‚ğ•ÏX
+                            // è¦ç´ ã®ãƒ‡ãƒ¼ã‚¿å‹ã«ã‚ˆã£ã¦ãƒ«ãƒ¼ãƒ—æ–¹æ³•ã‚’å¤‰æ›´
                             if(key == 'cbd'){
-                                // ƒIƒuƒWƒFƒNƒg—v‘f‚ğƒ‹[ƒv
+                                // ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆè¦ç´ ã‚’ãƒ«ãƒ¼ãƒ—
                                 Object.keys(childElm).forEach(childKey => {
                                     console.log(`childKey: ${childKey} childValue: ${JSON.stringify(childElm[childKey])}`)
                                 })
                             } else {
-                                // ”z—ñ—v‘f‚ğƒ‹[ƒv
+                                // é…åˆ—è¦ç´ ã‚’ãƒ«ãƒ¼ãƒ—
                                 childElm.forEach(childElem => {
                                     console.log('childElm'+ JSON.stringify(childElem));
                                 })
@@ -377,22 +377,22 @@
             }
 
 
-            /*** ƒRƒ“ƒ^ƒNƒgƒ{[ƒh–¾×1:ƒtƒ@ƒCƒ‹N‚ÌƒRƒ“ƒXƒgƒ‰ƒNƒ^ ***/
+            /*** ã‚³ãƒ³ã‚¿ã‚¯ãƒˆãƒœãƒ¼ãƒ‰æ˜ç´°1:ãƒ•ã‚¡ã‚¤ãƒ«Nã®ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ ***/
             function cbdList(cbd, cvNameArray, fileUrlArray) {
-                'use strict'; //strictƒ‚[ƒhinew‚Ì•t‚¯–Y‚ê‚É‚æ‚éƒOƒ[ƒoƒ‹•Ï”éŒ¾‰ñ”ğinew•t‚¯–Y‚ê‚ÅƒGƒ‰[jj
+                'use strict'; //strictãƒ¢ãƒ¼ãƒ‰ï¼ˆnewã®ä»˜ã‘å¿˜ã‚Œã«ã‚ˆã‚‹ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°å®£è¨€å›é¿ï¼ˆnewä»˜ã‘å¿˜ã‚Œã§ã‚¨ãƒ©ãƒ¼ï¼‰ï¼‰
                 this.cbd = cbd;
                 this.cvNameArray = cvNameArray;
                 this.fileUrlArray = fileUrlArray;
             }
-            // ƒRƒ“ƒ^ƒNƒgƒ{[ƒh–¾×‚Æ“Y•tƒtƒ@ƒCƒ‹‚Ì‘g‚İ‡‚í‚¹‚ğŠi”[‚·‚éƒŠƒXƒg
+            // ã‚³ãƒ³ã‚¿ã‚¯ãƒˆãƒœãƒ¼ãƒ‰æ˜ç´°ã¨æ·»ä»˜ãƒ•ã‚¡ã‚¤ãƒ«ã®çµ„ã¿åˆã‚ã›ã‚’æ ¼ç´ã™ã‚‹ãƒªã‚¹ãƒˆ
             let cbdObjList = [];
-            // ƒtƒ@ƒCƒ‹URL
+            // ãƒ•ã‚¡ã‚¤ãƒ«URL
             let fileUrlArray = [];
             
-            // ˆø”FƒP[ƒXNo
+            // å¼•æ•°ï¼šã‚±ãƒ¼ã‚¹No
             function sendCbd(caseNum){
                 changeDisplayButton1(caseNum.value);
-                // ƒAƒNƒZƒXƒg[ƒNƒ“æ“¾iƒŠƒtƒŒƒbƒVƒ…ƒg[ƒNƒ“ƒtƒ[j Ajax
+                // ã‚¢ã‚¯ã‚»ã‚¹ãƒˆãƒ¼ã‚¯ãƒ³å–å¾—ï¼ˆãƒªãƒ•ãƒ¬ãƒƒã‚·ãƒ¥ãƒˆãƒ¼ã‚¯ãƒ³ãƒ•ãƒ­ãƒ¼ï¼‰ Ajax
                 $.ajax({
                     type: 'POST',
                     crossOrigin: true,
@@ -401,10 +401,10 @@
                     cache :false,
                     data : {"grant_type":"refresh_token","client_id":"3MVG9pRzvMkjMb6nsLsmTx_FqB0rQ9AHEMYt85TrwFp6b3yeP.ta18VQpmha_Ds31fssFdYib4DdLPcLKqtQG", "client_secret":"F864BDD8ADFB8B17EA27F0623CF9039A503A76F9312032654DBFFDB25E87B142","refresh_token":"5Aep861mdLLi91HqFfCpXYtQXRaOgcHsK1gi36_cVHboubUhDFRrSCX9zyL1KBPgaR5qiKjUA54Q0RZhiN_teRI"},
                     success : function (connectData) {
-                        // ƒAƒNƒZƒXƒg[ƒNƒ“
+                        // ã‚¢ã‚¯ã‚»ã‚¹ãƒˆãƒ¼ã‚¯ãƒ³
                         let accToken = 'Bearer ' + connectData.access_token;
 
-                        // ƒRƒ“ƒ^ƒNƒgƒ{[ƒh–¾×‚ğæ“¾
+                        // ã‚³ãƒ³ã‚¿ã‚¯ãƒˆãƒœãƒ¼ãƒ‰æ˜ç´°ã‚’å–å¾—
                         $.ajax({
                             type: 'GET',
                             crossOrigin: true,
@@ -415,11 +415,11 @@
                             dataType: 'json',
                             data : JSON.stringify(caseNum.value),
                             success : function (res) {
-                                // ƒf[ƒ^‚ğæ“¾‚Å‚«‚½ê‡
+                                // ãƒ‡ãƒ¼ã‚¿ã‚’å–å¾—ã§ããŸå ´åˆ
                                 if(res.length != 0){
                                     arrayCbd = res; // [{Id, RecordType__c, Content__c, Case__c, CreatedDate}]
 
-                                    // ƒRƒ“ƒ^ƒNƒgƒ{[ƒhID‚©‚çƒRƒ“ƒeƒ“ƒcƒo[ƒWƒ‡ƒ“‚ÌIDæ“¾
+                                    // ã‚³ãƒ³ã‚¿ã‚¯ãƒˆãƒœãƒ¼ãƒ‰IDã‹ã‚‰ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®IDå–å¾—
                                     $.ajax({
                                         type: 'GET',
                                         crossOrigin: true,
@@ -431,192 +431,33 @@
                                         data : JSON.stringify(caseNum.value),
                                         success : function (Cv) {
                                             //console.log('Cv:' + Cv);
-                                            let cvList = Cv; // [Id LinkEntityId(ƒRƒ“ƒ^ƒNƒgƒ{[ƒhID), List CvIdList(ƒRƒ“ƒeƒ“ƒcƒo[ƒWƒ‡ƒ“ID), CvName]
+                                            let cvList = Cv; // [Id LinkEntityId(ã‚³ãƒ³ã‚¿ã‚¯ãƒˆãƒœãƒ¼ãƒ‰ID), List CvIdList(ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãƒãƒ¼ã‚¸ãƒ§ãƒ³ID), CvName]
 
-                                            // ƒRƒ“ƒ^ƒNƒgƒ{[ƒh–¾×‚Æ“Y•tƒtƒ@ƒCƒ‹‚Ì‘g‚İ‡‚í‚¹‚ğŠi”[‚·‚éƒŠƒXƒg
+                                            // ã‚³ãƒ³ã‚¿ã‚¯ãƒˆãƒœãƒ¼ãƒ‰æ˜ç´°ã¨æ·»ä»˜ãƒ•ã‚¡ã‚¤ãƒ«ã®çµ„ã¿åˆã‚ã›ã‚’æ ¼ç´ã™ã‚‹ãƒªã‚¹ãƒˆ
                                             cbdObjList = [];
-                                            // List<obj>‚©‚çæ“¾—p
+                                            // List<obj>ã‹ã‚‰å–å¾—ç”¨
                                             let cbdNumber = arrayCbd.map(el => el.Id);
-                                            // ƒRƒ“ƒ^ƒNƒgƒ{[ƒh‚ÌŒ”•ªA‰æ–Êo—Íˆ—
-                                            for (let i=0; i < cvList.length; i++){
-                                                //console.log('i:'+i);
-                                                // ƒtƒ@ƒCƒ‹URL
-                                                fileUrlArray = [];
-                                                // Apex•Ô‹p’l
-                                                let cbd = {};
-                                                let contentversionNameArray = [];
-                                                let contentversionIdArrary = [];
-                                                // ƒRƒ“ƒ^ƒNƒgƒ{[ƒh–¾×
-                                                
-                                                let cbdRecType = '';
-                                                let cbdContent = '';
-                                                let cbdCreatedDate = '';
-                                                
-                                                // 1ƒ‹[ƒv‚²‚Æ‚Éİ’è
-                                                conId = cvList[i].LinkEntityId;
-                                                //console.log('cvList['+ i +'].CvNameList: ' + cvList[i].CvNameList);
-                                                contentversionNameArray = cvList[i].CvNameList;
-                                                contentversionIdArrary = cvList[i].CvIdList;
-                                                // ƒRƒ“ƒ^ƒNƒgƒ{[ƒh‚Ìî•ñ‚ğæ“¾
-                                                cbdIndex = cbdNumber.indexOf(conId);
-                                                // ƒRƒ“ƒ^ƒNƒgƒ{[ƒh–¾×‚Ì’l‚ğİ’è
-                                                cbdRecType = arrayCbd[cbdIndex].RecordType__c;
-                                                cbdContent = arrayCbd[cbdIndex].Content__c;
-                                                cbdCreatedDate = arrayCbd[cbdIndex].CreatedDate;
-                                                // cbd‚ğƒIƒuƒWƒFƒNƒg‰»
-                                                cbd = {
-                                                    'cbdId':conId,
-                                                    'cbdRecType':cbdRecType,
-                                                    'cbdContent':cbdContent,
-                                                    'cbdCreatedDate':cbdCreatedDate
-                                                };
-                                                
-                                                // ƒRƒ“ƒ^ƒNƒgƒ{[ƒh–¾×‚É•R‚Ã‚­A“Y•tƒtƒ@ƒCƒ‹‚ğæ“¾‚µA‰æ–Êo—Í
-                                                for (let j=0; j < contentversionIdArrary.length; j++){
-                                                    $.ajax({
-                                                        type: 'GET',
-                                                        crossOrigin: true,
-                                                        url: 'https://protocomdev-dev-ed.my.salesforce.com/services/data/v54.0/sobjects/ContentVersion/' + contentversionIdArrary[j] + '/VersionData', 
-                                                        cache :false,
-                                                        //scriptCharset: 'Shift_JIS',
-                                                        headers: {"Authorization" : accToken},
-                                                        xhrFields : {responseType : 'blob'},
-                                                        success : function (dlFile) {
-                                                            //console.log('j:'+j);
-                                                            console.log('dlfile: '+ dlFile);
-                                                            let binaryData = [];
-                                                            binaryData.push(dlFile);
-                                                            let fileUrl = URL.createObjectURL(new Blob(binaryData, {type: "application/octet-stream"}));
-                                                            console.log('fileUrl: '+fileUrl);
-                                                            fileUrlArray.push(fileUrl);
-                                                        },
-                                                        error : function (data, errorThrown,status) {
-                                                            console.log(data);
-                                                            console.log(errorThrown);
-                                                            console.log(status);
-                                                        }
-                                                    })
-                                                }
-                                                // ƒNƒ‰ƒX‚É‚Â‚ß‚ÄA”z—ñ‚É“ü‚ê‚é
-                                                let cbdObj = new cbdList(cbd, contentversionNameArray, fileUrlArray);
-                                                cbdObjList.push(cbdObj);
-                                                console.log('cbdObjList' + JSON.stringify(cbdObjList));
-                                            }
-                                            
-                                            /*** ƒ^ƒO‚ğì¬ ***/
-                                            /***
-                                             * cbdObjList = [
-                                             *  cbd = {cbdId, cbdRecType, cbdContent, cbdCreatedDate} // ƒRƒ“ƒ^ƒNƒgƒ{[ƒh–¾×‚Ìî•ñ
-                                             *  contentversionNameArray  // ƒtƒ@ƒCƒ‹‚Ì–¼‘O
-                                             *  fileUrlArray             // ƒtƒ@ƒCƒ‹‚ÌURL
-                                             * ]
-                                             ***/
-                                            // cbdObjList‚ğƒ‹[ƒv
-                                            /*
-                                            cbdObjList.forEach(elm => {
-                                                console.log('elm'+ JSON.stringify(elm));
-                                                // ƒIƒuƒWƒFƒNƒg‚Ì—v‘f‚ğƒ‹[ƒv
-                                                Object.keys(elm).forEach(key => {
-                                                    console.log(`key: ${key} value: ${JSON.stringify(elm[key])}`)
-                                                    let childElm = elm[key];
-                                                    // —v‘f‚Ìƒf[ƒ^Œ^‚É‚æ‚Á‚Äƒ‹[ƒv•û–@‚ğ•ÏX
-                                                    if(key == 'cbd'){
-                                                        // ƒIƒuƒWƒFƒNƒg‚Ì—v‘f‚ğƒ‹[ƒv
-                                                        Object.keys(childElm).forEach(childKey => {
-                                                            console.log(`childKey: ${childKey} childValue: ${JSON.stringify(childElm[childKey])}`)
-                                                        })
-                                                    } else {
-                                                        // ”z—ñ‚Ì—v‘f‚ğƒ‹[ƒv
-                                                        childElm.forEach(childElem => {
-                                                            console.log('childElm'+ JSON.stringify(childElem));
-                                                        })
+                                            console.log('res:' + res);
+                                            // ã‚³ãƒ³ã‚¿ã‚¯ãƒˆãƒœãƒ¼ãƒ‰æ˜ç´°ã«ç´ã¥ãã€æ·»ä»˜ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å–å¾—ã—ã€ç”»é¢å‡ºåŠ›
+                                            for (let j=0; j < contentversionIdArrary.length; j++){
+                                                $.ajax({
+                                                    type: 'GET',
+                                                    crossOrigin: true,
+                                                    url: 'https://protocomdev-dev-ed.my.salesforce.com/services/data/v54.0/sobjects/ContentVersion/' + contentversionIdArrary[j] + '/VersionData', 
+                                                    cache :false,
+                                                    //scriptCharset: 'Shift_JIS',
+                                                    headers: {"Authorization" : accToken},
+                                                    xhrFields : {responseType : 'blob'},
+                                                    success : function (dlFile) {
+                                                        console.log(dlFile);
+                                                    },
+                                                    error : function (data, errorThrown,status) {
+                                                        console.log(data);
+                                                        console.log(errorThrown);
+                                                        console.log(status);
                                                     }
                                                 })
-                                            })
-                                            */
-
-                                            // template—v‘f‚ğæ“¾
-                                            /*
-                                            let template = document.getElementById('templateInqList_Details');
-                                            // ƒf[ƒ^‚Ì”•ªŒJ‚è•Ô‚µ
-                                            for(let i=0; i < cbdObjList.length; i++){
-                                                
-                                                // Apex•Ô‹p’l
-                                                let Id = '';
-                                                let contentversionNameArray = [];
-                                                // ƒRƒ“ƒ^ƒNƒgƒ{[ƒh–¾×
-                                                let cbdRecType = '';
-                                                let cbdContent = '';
-                                                let cbdCreatedDate = '';
-
-                                                // 1ƒ‹[ƒv‚²‚Æ‚Éİ’è
-                                                conId = cbdObjList[i].LinkEntityId;
-                                                contentversionNameArray = cbdObjList[i].CvNameList;
-                                                contentversionIdArrary = cbdObjList[i].CvIdList;
-                                                console.log(conId);
-                                                console.log(contentversionNameArray);
-                                                console.log(contentversionIdArrary);
-                                                
-                                                // ƒRƒ“ƒ^ƒNƒgƒ{[ƒh‚Ìî•ñ‚ğæ“¾
-                                                cbdIndex = cbdNumber.indexOf(conId);
-                                                // ƒRƒ“ƒ^ƒNƒgƒ{[ƒh–¾×‚Ì’l‚ğİ’è
-                                                cbdRecType = arrayCbd[cbdIndex].RecordType__c;
-                                                cbdContent = arrayCbd[cbdIndex].Content__c;
-                                                cbdCreatedDate = arrayCbd[cbdIndex].CreatedDate;
-
-                                                // template—v‘f‚ğæ“¾
-                                                let template = document.getElementById('templateInqList_Details');
-                                                // template—v‘f‚Ì“à—e‚ğ•¡»
-                                                let clone = template.content.cloneNode(true);
-                                                // “ú•tŠÔ‚ğŒ©o‚µ—p‚É®Œ`
-                                                let dateTime = arrayCbd[i].CreatedDate.substring( 0, cbdCreatedDate.length - 12 );
-                                                let year = dateTime.substring(0, 4);
-                                                let month = dateTime.substring(5, 7);
-                                                let day = dateTime.substring(8, 10);
-                                                let time = dateTime.substring(dateTime.length - 5, dateTime.length);
-                                                dateTime = year + '”N' + month +  'Œ' + day + '“ú ' + time;
-                                                // •¡»‚µ‚½template—v‘f‚Éƒf[ƒ^‚ğ‘}“ü
-                                                clone.querySelector('.detailButton').innerHTML = dateTime;
-                                                clone.querySelector('.detailButton').Name = 'detail'+ i;
-                                                clone.querySelector('.detailButton').id = 'detailButton'+ i;
-                                                clone.querySelector('.detailButton').value = false;
-                                                let content = '';
-                                                // •ÔM“à—e‚ª12 •¶šˆÈ‰º‚È‚ç‚»‚Ì‚Ü‚ÜA‚»‚ê‚ğ’´‚¦‚éê‡È—ª
-                                                if(arrayCbd[i].Content__c.length > 12){
-                                                    content = cbdRecType + ':' + cbdContent.substring(0, 12) + "...";
-                                                } else{
-                                                    content = cbdRecType + ':' + cbdContent;
-                                                }
-                                                clone.querySelector('.inqDetail').textContent = content;
-                                                clone.querySelector('.inqDetail').id = 'detail'+ i;
-                                                
-                                                // div#outputInqList_Details‚Ì’†‚É’Ç‰Á
-                                                document.getElementById('outputInqList_Details').appendChild(clone);
-
-                                                // “Y•tƒtƒ@ƒCƒ‹•”•ª‚Ìƒeƒ“ƒvƒŒ[ƒgì¬
-                                                let fileListTemplate = document.getElementById('fileList');
-
-                                                //for•¶‚Åƒtƒ@ƒCƒ‹‚ÌŒ”•ªƒNƒ[ƒ“‚·‚é
-                                                if(contentversionIdArrary != 0){
-                                                    for(let j=0; j < contentversionIdArrary.length; j++){
-                                                        let fileListClone = fileListTemplate.content.cloneNode(true);
-                                                        // ŒÅ’è•¶šo—Í—p
-                                                        fileListClone.querySelector('.fileDownloadText').innerHTML = 'ƒtƒ@ƒCƒ‹iƒRƒ`ƒ‰‚©‚çƒ_ƒEƒ“ƒ[ƒhj';
-                                                        fileListClone.querySelector('.fileDownloadText').id = 'fdText'+ j;
-                                                        fileListClone.querySelector('.fileDownloadText').value = 'true';
-                                                        fileListClone.querySelector('.fileDownloadText').style = 'display:none;';
-                                                        // ƒtƒ@ƒCƒ‹
-                                                        fileListClone.querySelector('.attachment').innerText = contentversionNameArray[j];
-                                                        fileListClone.querySelector('.attachment').href = fileUrlList;
-                                                        fileListClone.querySelector('.attachment').download = contentversionNameArray[j];
-                                                        fileListClone.querySelector('.attachment').id = 'fName'+ j;
-                                                        fileListClone.querySelector('.attachment').style = 'display:none;';
-                                                        // div#fileList‚Ì’†‚É’Ç‰Á
-                                                        document.getElementById('outputInqList_Details').appendChild(clone);
-                                                    }
-                                                }
                                             }
-                                            */
                                         },
                                         error : function (data, errorThrown,status) {
                                             console.log(data);
@@ -625,68 +466,15 @@
                                         }
                                     })
                                 }
-                                /*** ƒ^ƒO‚ğì¬ ***/
-                                /***
-                                 * cbdObjList = [
-                                 *  cbd = {cbdId, cbdRecType, cbdContent, cbdCreatedDate} // ƒRƒ“ƒ^ƒNƒgƒ{[ƒh–¾×‚Ìî•ñ
-                                 *  contentversionNameArray  // ƒtƒ@ƒCƒ‹‚Ì–¼‘O
-                                 *  fileUrlArray             // ƒtƒ@ƒCƒ‹‚ÌURL
-                                 * ]
-                                 ***/
-                                // cbdObjList‚ğƒ‹[ƒv
-                                /*
-                                cbdObjList.forEach(elm => {
-                                    console.log('elm'+ JSON.stringify(elm));
-                                    // ƒIƒuƒWƒFƒNƒg‚Ì—v‘f‚ğƒ‹[ƒv
-                                    Object.keys(elm).forEach(key => {
-                                        console.log(`key: ${key} value: ${JSON.stringify(elm[key])}`)
-                                        let childElm = elm[key];
-                                        // —v‘f‚Ìƒf[ƒ^Œ^‚É‚æ‚Á‚Äƒ‹[ƒv•û–@‚ğ•ÏX
-                                        if(key == 'cbd'){
-                                            // ƒIƒuƒWƒFƒNƒg‚Ì—v‘f‚ğƒ‹[ƒv
-                                            Object.keys(childElm).forEach(childKey => {
-                                                console.log(`childKey: ${childKey} childValue: ${JSON.stringify(childElm[childKey])}`)
-                                            })
-                                        } else {
-                                            // ”z—ñ‚Ì—v‘f‚ğƒ‹[ƒv
-                                            childElm.forEach(childElem => {
-                                                console.log('childElm'+ JSON.stringify(childElem));
-                                            })
-                                        }
-                                    })
-                                })
-                                */
                             },
                             error : function (data, errorThrown,status) {
                                 
                             }
-                            
-                        })
-                        cbdObjList.forEach(elm => {
-                            console.log('elm'+ JSON.stringify(elm));
-                            // ƒIƒuƒWƒFƒNƒg‚Ì—v‘f‚ğƒ‹[ƒv
-                            Object.keys(elm).forEach(key => {
-                                console.log(`key: ${key} value: ${JSON.stringify(elm[key])}`)
-                                let childElm = elm[key];
-                                // —v‘f‚Ìƒf[ƒ^Œ^‚É‚æ‚Á‚Äƒ‹[ƒv•û–@‚ğ•ÏX
-                                if(key == 'cbd'){
-                                    // ƒIƒuƒWƒFƒNƒg‚Ì—v‘f‚ğƒ‹[ƒv
-                                    Object.keys(childElm).forEach(childKey => {
-                                        console.log(`childKey: ${childKey} childValue: ${JSON.stringify(childElm[childKey])}`)
-                                    })
-                                } else {
-                                    // ”z—ñ‚Ì—v‘f‚ğƒ‹[ƒv
-                                    childElm.forEach(childElem => {
-                                        console.log('childElm'+ JSON.stringify(childElem));
-                                    })
-                                }
-                            })
                         })
                     },
                     error : function (data, errorThrown,status) {
                     }
                 });
-                
             }
         </script>
     </body>
